@@ -44,7 +44,6 @@ body{
 }
 .input-name span{
     background-color: #77AAAD;
-    display: block;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -107,5 +106,9 @@ body{
     }
     .input-control span{
         display: block;
+    }
+     .input-control input{
+        width: 300px;
+        
     }
 }
