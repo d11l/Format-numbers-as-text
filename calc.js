@@ -30,7 +30,7 @@ function numToEng(n) {
         return `الرقم خارج النطاق المحدد من فضلك ادخل رقم اقل من 999`;
     }
 
-ones = ["صفر", "واحد", "اثنان", "ثلاثة", "أربعة", "خمسة", "ستة", "سبعة", "ثمانية", "تسعة", "عشرة",
+let ones = ["صفر", "واحد", "اثنان", "ثلاثة", "أربعة", "خمسة", "ستة", "سبعة", "ثمانية", "تسعة", "عشرة",
 "احدى عشر", "اثنا عشر", "ثلاثة عشر", "أربعة عشر", "خمسة عشر", "ستة عشر", "سبعة عشر", "ثمانية عشر", "تسعة عشر"];
 
 let tens = ["", "", "عشرون", "ثلاثون", "أربعون", "خمسون", "ستون", "سبعون", "ثمانون", "تسعون"];
@@ -86,7 +86,7 @@ function numToEng2(n) {
 
  
 
-ones = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
+let ones = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
 "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"];
 
 let tens = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"];
@@ -125,7 +125,6 @@ if (parseInt(ns[1]) != 0) {
 if (parseInt(ns[2]) != 0) {
     Res += "-" + ones[parseInt(ns[2])];
 }
-
 }
 }
 return Res;
