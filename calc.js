@@ -26,8 +26,8 @@ function clearInputAndResult(){
 
 function numToEng(n) {
 
-    if(n>999){
-        return `الرقم خارج النطاق المحدد من فضلك ادخل رقم اقل من 999`;
+   if(+n === n && n % 1 !== 0){
+        return `من فضلك ادخل ارقام صحيحة فقط`;
     }
 
 let ones = ["صفر", "واحد", "اثنان", "ثلاثة", "أربعة", "خمسة", "ستة", "سبعة", "ثمانية", "تسعة", "عشرة",
@@ -84,7 +84,9 @@ return Res;
 
 function numToEng2(n) {
 
- 
+    if(+n === n && n % 1 !== 0){
+        return " ";
+    }
 
 let ones = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
 "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"];
